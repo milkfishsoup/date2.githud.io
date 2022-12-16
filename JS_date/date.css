@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background-color:gray;
+}
+
+h2{
+    z-index:2;
+    font-size:xx-large;
+    font-weight:300;
+}
+
+.calendar{
+    position:relative;
+    width:200px;
+    background-color:white;
+    text-align:center;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:3px 3px 7px 5px rgb(98, 98, 98);
+    z-index:2;
+}
+
+.calendar #year{
+    position:absolute;
+    top:18px;
+    left:15px;
+    background-color:rgb(149, 151, 151);
+    color:white;
+    font-size:20px;
+    font-weight:500;
+   
+}
+
+.calendar #monthName{
+    position:relative;
+    padding:10px;
+    background-color:rgb(149, 151, 151);
+    color:white;
+    font-size:30px;
+    font-weight:700;
+}
+
+.calendar #day{
+    color:rgb(7,7,7);
+    font-size:100px;
+    font-weight:800;
+    margin-top:20px;
+
+}
+
+
+.calendar #dayName{
+    color:rgd(103,103,103);
+    font-size:20px;
+    font-weight:300;
+    margin-bottom:20px;
+
+}
+
+/* .bg-image{
+    background-image:url("background.jpg");
+    width:100%;
+    height:100vh;
+    position:absolute;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    filter:blur(3px);
+} */
+
+.video-back{
+    position:fixed;  /* position:fixed屬性 固定*/
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    z-index:1;
+}
